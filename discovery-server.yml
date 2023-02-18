@@ -1,0 +1,13 @@
+server:
+  port: 9102
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+spring:
+  cloud:
+    config:
+      import-check:
+        enabled: false
