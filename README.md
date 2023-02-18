@@ -1,0 +1,1 @@
+# starshipshop-config
