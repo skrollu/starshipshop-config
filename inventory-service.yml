@@ -15,8 +15,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9102/eureka/
 
-server:
-  port: 8081
 spring:
   datasource:
     password: root
