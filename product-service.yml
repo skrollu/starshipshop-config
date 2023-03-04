@@ -3,4 +3,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9102/eureka/
 
-inventory-service.ribbon.listOfServers: localhost:8081
+feign:
+  client:
+    config:
+      starship:
+        username: admin@mail.com
+        password: password
