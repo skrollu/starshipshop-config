@@ -7,3 +7,22 @@ client:
   starship:
     username: admin@mail.com
     password: password
+
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/product_service?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: false
+    show-sql: false
+  sql:
+    init:
+      mode: always
+      platform: mysql
