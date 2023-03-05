@@ -22,5 +22,3 @@ spring:
         uri: http://localhost:9102/
         predicates:
           - Path=/eureka/**
-        filters:
-          - SetPath=/
