@@ -9,3 +9,5 @@ spring:
       routes:
       - id: product-service
         uri: lb://product-service
+        predicates:
+          - Path=/api/v1/product/starship/{skuCode}
