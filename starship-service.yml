@@ -1,7 +1,12 @@
 app:
   hashids:
     salt: mySuperSalt
-    
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
+      
 logging:
   level:
     org:
