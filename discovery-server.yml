@@ -5,8 +5,8 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-  username: ${EUREKA_USERNAME:eureka}
-  password: ${EUREKA_PASSWORD:password}
+  username: eureka
+  password: password
 
 spring:
   cloud:
