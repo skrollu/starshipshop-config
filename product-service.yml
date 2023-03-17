@@ -1,12 +1,23 @@
+client:
+  starship:
+    username: admin@mail.com
+    password: password
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka:password@localhost:9102/eureka/
 
-client:
-  starship:
-    username: admin@mail.com
-    password: password
+management:
+  endpoints:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: *
+  health:
+    circuitbreakers:
+      enabled: true
 
 spring:
   datasource:
@@ -26,3 +37,17 @@ spring:
     init:
       mode: always
       platform: mysql
+
+#Resilience4j Properties
+resilience4j:
+  circuitbreaker:
+    instances:
+      inventory:
+        registerHealIndicator: true
+        event-consumer-buffer-size: 10
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
