@@ -8,17 +8,17 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka:password@localhost:9102/eureka/
 
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: *
-  health:
-    circuitbreakers:
-      enabled: true
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+#  health:
+#    circuitbreakers:
+#      enabled: true
 
 spring:
   datasource:
@@ -39,6 +39,7 @@ spring:
       mode: always
       platform: mysql
 
+#Resilience4j Properties
 resilience4j:
   circuitbreaker:
     instances:
