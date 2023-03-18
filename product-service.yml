@@ -39,7 +39,6 @@ spring:
       mode: always
       platform: mysql
 
-#Resilience4j Properties
 resilience4j:
   circuitbreaker:
     instances:
