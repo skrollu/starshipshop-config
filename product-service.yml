@@ -9,9 +9,10 @@ eureka:
       defaultZone: http://eureka:password@localhost:9102/eureka/
 
 management:
-  endpoints:
+  endpoint:
     health:
       show-details: always
+  endpoints:
     web:
       exposure:
         include: *
