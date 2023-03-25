@@ -27,7 +27,7 @@ spring:
       client:
         provider:
           starshipshop-provider:
-            issuer-uri: http://localhost:8181/realms/starshipshop-realm
+            issuer-uri: http://localhost:8181/auth/realms/starshipshop-realm
         registration:
           keycloak-spring-gateway-client:
             provider: starshipshop-provider
