@@ -32,6 +32,7 @@ spring:
             client-secret: hjHJ00PSt7kgglPdY1ixJbI6qUcTHzlS
             authorization-grant-type: authorization_code
             redirect-uri: 'http://localhost:9103/login/oauth2/code/{registrationId}'
+            scope: openid
         provider:
           starshipshop-provider:
             issuer-uri: http://localhost:8181/realms/starshipshop-realm
