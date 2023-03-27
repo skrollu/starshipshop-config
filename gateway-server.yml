@@ -32,7 +32,7 @@ spring:
           keycloak-spring-gateway-client:
             provider: starshipshop-provider
             client-id: spring-gateway-client
-            client-secret: 6z5dRSFOKW6dNTbWl2Lu9kpz2A9CcnYE
+            client-secret: hjHJ00PSt7kgglPdY1ixJbI6qUcTHzlS
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/keycloak'
   sleuth:
