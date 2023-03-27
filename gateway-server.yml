@@ -26,7 +26,7 @@ spring:
     oauth2:
       client:
         registration:
-          keycloak:
+          gateway:
             provider: starshipshop-provider
             client-id: spring-gateway-client
             client-secret: hjHJ00PSt7kgglPdY1ixJbI6qUcTHzlS
