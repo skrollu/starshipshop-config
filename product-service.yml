@@ -54,7 +54,7 @@ spring:
           opaque-token:
             introspection-uri: http://localhost:8181/realms/starshipshop-realm/protocol/openid-connect/token/introspect
             client-id: spring-gateway-client
-            client-secret: DRZMhRByIN3VoM5b8pqmAjXJkhuV86eK
+            client-secret: hjHJ00PSt7kgglPdY1ixJbI6qUcTHzlS
   sleuth:
     sampler:
       probability: 1.0
