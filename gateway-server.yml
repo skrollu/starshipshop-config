@@ -31,7 +31,7 @@ spring:
           gateway:
             provider: starshipshop-provider
             client-id: spring-gateway-client
-            client-secret: hjHJ00PSt7kgglPdY1ixJbI6qUcTHzlS
+            client-secret: DRZMhRByIN3VoM5b8pqmAjXJkhuV86eK
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid

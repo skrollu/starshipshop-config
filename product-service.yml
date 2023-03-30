@@ -47,6 +47,14 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         format_sql: false
     show-sql: false
+  security:
+    oauth2:
+      client:
+        resourceserver:
+          opaque-token:
+            introspection-uri: http://localhost:8181/realms/starshipshop-realm/protocol/openid-connect/token/introspect
+            client-id: spring-gateway-client
+            client-secret: DRZMhRByIN3VoM5b8pqmAjXJkhuV86eK
   sleuth:
     sampler:
       probability: 1.0
