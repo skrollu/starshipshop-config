@@ -3,6 +3,12 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka:password@localhost:9102/eureka/
 
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
 spring:
   cloud:
     gateway:
