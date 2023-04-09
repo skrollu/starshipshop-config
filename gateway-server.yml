@@ -12,11 +12,18 @@ logging:
 spring:
   cloud:
     gateway:
+      default-filters:
+        - TokenRelay=
       routes:
       - id: product-service
         uri: lb://product-service
         predicates:
           - Path=/api/v1/products/starship/{skuCode}
+          - Method=GET
+      - id: cart-service
+        uri: lb://cart-service
+        predicates:
+          - Path=/api/v1/carts
           - Method=GET
         filters:
           - TokenRelay=
