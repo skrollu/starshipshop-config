@@ -1,19 +1,18 @@
 app:
   hashids:
     salt: mySuperSalt
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@localhost:9102/eureka/
+
 logging:
   level:
     org:
       hibernate:
         SQL: DEBUG
         type: TRACE
-      springframework:
-        security: DEBUG
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka:password@localhost:9102/eureka/
 
 spring:
   datasource:
