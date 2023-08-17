@@ -28,7 +28,7 @@ spring:
       - id: product-service
         uri: lb://product-service
         predicates:
-          - Path=/api/v1/products/starship/{skuCode}
+          - Path=/api/v1/products/**
           - Method=GET
       - id: starship-service
         uri: lb://starship-service
