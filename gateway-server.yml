@@ -26,12 +26,14 @@ spring:
         - TokenRelay=
       routes:
       - id: product-service
-        uri: lb://product-service
+#        uri: lb://product-service not working no reason found...
+        uri: http://localhost:8083
         predicates:
           - Path=/api/v1/products/starship/{skuCode}
           - Method=GET
       - id: starship-service
-        uri: lb://starship-service
+#        uri: lb://starship-service not working no reason found...
+        uri: http://localhost:8084
         predicates:
           - Path=/api/v1/starships/**
           - Method=GET
