@@ -35,6 +35,11 @@ spring:
         predicates:
           - Path=/api/v1/starships/**
           - Method=GET
+      - id: inventory-service
+        uri: lb://inventory-service
+        predicates:
+          - Path=/api/v1/inventory/{skuCode}
+          - Method=GET
 
 # Comment following this https://www.youtube.com/watch?v=hfeOqvHxHO8&list=PLab_if3UBk99jYV1jfe_7fKQczVX9H4zZ&index=11
 # to use PKCE Authorization code flow
