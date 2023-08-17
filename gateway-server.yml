@@ -33,7 +33,7 @@ spring:
       - id: starship-service
         uri: lb://starship-service
         predicates:
-          - Path=/api/v1/starship/**
+          - Path=/api/v1/starships/**
           - Method=GET
 
 # Comment following this https://www.youtube.com/watch?v=hfeOqvHxHO8&list=PLab_if3UBk99jYV1jfe_7fKQczVX9H4zZ&index=11
