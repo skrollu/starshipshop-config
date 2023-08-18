@@ -22,8 +22,8 @@ spring:
               - POST
               - PUT
       # Use PKCE auth flow
-#      default-filters:
-#        - TokenRelay=
+      default-filters:
+        - TokenRelay=
       routes:
       - id: product-service
         uri: lb://product-service
@@ -44,20 +44,20 @@ spring:
 # Comment following this https://www.youtube.com/watch?v=hfeOqvHxHO8&list=PLab_if3UBk99jYV1jfe_7fKQczVX9H4zZ&index=11
 # to use PKCE Authorization code flow
 # refer to https://www.youtube.com/watch?v=YHWfJHKGYGI&list=PLab_if3UBk99jYV1jfe_7fKQczVX9H4zZ&index=11
-#  security:
-#   oauth2:
-#     client:
-#       registration:
-#         gateway:
-#           provider: gateway
-#           client-id: backend_client
-#           client-secret: l0x9ajixZUksbanezzaaAALR9cIxm486
-#           authorization-grant-type: authorization_code
-#           redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
-#           scope: openid
-#       provider:
-#         gateway:
-#           issuer-uri: http://localhost:8181/realms/starshipshop-realm
+  security:
+   oauth2:
+     client:
+       registration:
+         gateway:
+           provider: gateway
+           client-id: backend_client
+           client-secret: l0x9ajixZUksbanezzaaAALR9cIxm486
+           authorization-grant-type: authorization_code
+           redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
+           scope: openid
+       provider:
+         gateway:
+           issuer-uri: http://localhost:8181/realms/starshipshop-realm
   sleuth:
     sampler:
       probability: 1.0
